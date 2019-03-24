@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="font/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick-theme.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.js"></script>
+  <script>
+ jQuery(document).ready(function($) {
+  if ($(window).width() > 1100) {
+   $('.slider-nav-fifth').slick({
+   slidesToShow: 2,
+   slidesToScroll: 1,
+   dots: false,
+   focusOnSelect: true,
+   nextArrow: '<i class="fa left fifth-arrow">&#xf177;</i>',
+   prevArrow: '<i class="fa right fifth-arrow">&#xf178;</i>'
+ })
+  }
+  else {
+   $('.slider-nav-fifth').slick({
+   slidesToShow: 1,
+   slidesToScroll: 1,
+   dots: false,
+   focusOnSelect: true,
+   nextArrow: '<i class="fa left">&#xf177;</i>',
+   prevArrow: '<i class="fa right">&#xf178;</i>'
+ })
+  }
+
+ $('.slider-nav').slick({
+   slidesToShow: 1,
+   slidesToScroll: 1,
+   dots: true,
+   dotsClass: "my-dots",
+   focusOnSelect: true,
+   nextArrow: '<i class="fa left">&#xf177;</i>',
+   prevArrow: '<i class="fa right">&#xf178;</i>'
+ });
+
+ $('a[data-slide]').click(function(e) {
+   e.preventDefault();
+   var slideno = $(this).data('slide');
+   $('.slider-nav').slick('slickGoTo', slideno - 1);
+ });
+
+});
+</script>
+
+<script type="text/javascript">
+function showSide() {
+  document.getElementById("sidebar").style.width = "300px";
+  document.getElementById("sidebar-background").style.width = "100%";
+}
+
+function hideSide() {
+  document.getElementById("sidebar").style.width = 0;
+  document.getElementById("sidebar-background").style.width = 0;
+}
+
+function serviceAccordion() {
+  document.getElementsByTagName("service-names")[0].style.display = "block";
+}
+
+/*
+    if (accord) {
+      for (var i = 0; i >= 0; i--) {
+        Things[i]
+      }
+    } else {
+      document.getElementsByTagName("service-names")[0].style.height = '250px';
+    }
+
+*/    
+
+</script>
+<title>Landing page</title>
+</head>
+<body>
+
+<div class="sidebar" id="sidebar">
+  <b class="clsbtn" onclick="hideSide()">x</b>
+  <div>How It Works</div>  
+  <div>Our Services</div>   
+  <div>Pricing</div>
+  <div class="second">
+  <div class="line"></div>
+  <div>261-198-7507 </div>
+  </div>
+  <div class="line"></div>  
+  <div>for Client</div>
+  <div>Service Providers</div>
+</div>
+
+<div class="sidebar-background" id="sidebar-background" onclick="hideSide()"></div>
+
+<nav onclick="serviceAccordion()">
+  <img class="logo" src="assets/img/logo.png" alt="">
+  <div class="first">
+  <div>How It Works</div>  <div>Our Services  </div>   <div>Pricing</div>
+  </div>
+  <div class="second">
+  <div class="line"></div>
+  <img src="assets/img/icn 11.png" alt="">
+  <div>261-198-7507 </div>
+  </div>
+  <div class="third">
+  <div class="line"></div>  
+  <img src="assets/img/icn 10.png" alt="">
+  <div>for Client</div>
+  <div>Service Providers</div>
+  </div>
+  <div class="menu-btn" onclick="showSide()">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+</nav>
+
+<header>
+<div class="content">
+  <h1>Title for Client</h1>
+  <div>Important description of service for customers with short explanations.  Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales  pulvinar tempor.</div>
+  <div class="btn"><div class="in-btn">Create Session</div></div>
+</div>
+</header>
+
+<section>
+  <article class="first">
+    <div class="content">
+    <h1>how it works</h1>
+    <div class="number-content">
+      <div class="number-content-item">
+        <div class="number-left">
+        <img src="/assets/img/icn 1.png" alt="">
+        <div class="hr"></div>
+        <div>Scheduling wizard designed specifically  for your event.</div>
+      </div>
+      <div class="number-right">
+        <img src="/assets/img/1.png" alt="">
+        <div class="step">step</div>
+      </div>  
+      </div>
+      <div class="number-content-item">
+        <div class="number-left">
+        <img src="/assets/img/icn 2.png" alt="">
+        <div class="hr"></div>
+        <div>Scheduling wizard designed specifically  for your event.</div>
+      </div>
+      <div class="number-right">
+        <img src="/assets/img/2.png" alt="">
+        <div class="step">step</div>
+      </div>  
+      </div>
+      <div class="number-content-item">
+        <div class="number-left">
+        <img src="/assets/img/icn 3.png" alt="">
+        <div class="hr"></div>
+        <div>Scheduling wizard designed specifically  for your event.</div>
+      </div>
+      <div class="number-right">
+        <img src="/assets/img/3.png" alt="">
+        <div class="step">step</div>
+      </div>  
+      </div>
+    </div>
+    <div class="footer">
+    <p>There are many variations of passages of Lorem Ipsum available, but the majority have  suffered alteration in some form, by injected humour, or randomised words which don’t look even slightly believable.</p>
+    <div class="btn black"><div class="in-btn ">more details</div></div>
+  </div>
+  </div>
+  </article>
+
+  <article class="second">
+    <div class="content">
+    <h1>our services</h1>
+    <div class="accordion">
+      <div class="active">Deposition <i class="material-icons arrow">keyboard_arrow_down</i></div>
+      <div>Arbitration</div>
+      <div>Hearing</div>
+      <div>Meeting/Auction</div>
+      <div>Video only</div>
+      <div>Interpreting only</div>      
+    </div>
+
+    <div class="service-names">
+      <div class="active">Deposition</div>
+      <div>Arbitration</div>
+      <div>Hearing</div>
+      <div>Meeting/Auction</div>
+      <div>Video only</div>
+      <div>Interpreting only</div>
+    </div>
+    <div class="icon-grid">
+      <div class="icon-grid-item"><img src="/assets/img/icn 4.png" alt=""><div>Transcription</div></div>
+      <div class="icon-grid-item"><img src="/assets/img/icn 5.png" alt=""><div>Realtime</div></div>
+      <div class="icon-grid-item"><img src="/assets/img/icn 6.png" alt=""><div>Video Streaming</div></div>
+      <div class="icon-grid-item"><img src="/assets/img/icn 7.png" alt=""><div>Rough Draft</div></div>
+      <div class="icon-grid-item"><img src="/assets/img/icn 8.png" alt=""><div>Videotaping</div></div>
+      <div class="icon-grid-item"><img src="/assets/img/icn 9.png" alt=""><div>Interpreting</div></div>
+    </div> 
+  </div>
+  </article>
+
+  <article class="third">
+    <h1>NextDep in Numbers</h1>
+    <div class="content">
+      <div class="set-size charts-container">
+        <div class="pie-wrapper progress-33 style-2">
+          <span class="label">
+          <div>
+            <div>71</div>
+            <div class="subtext">Lorem Ipsum</div>
+          </div>
+        </span>
+          <div class="pie">
+            <div class="left-side half-circle"></div>
+            <div class="right-side half-circle"></div>
+          </div>
+          <div class="shadow"></div>
+          <div class="core core-top"></div>
+          <div class="core core-second"></div>
+        </div>
+  
+        <div class="pie-wrapper progress-63 style-2">
+        <span class="label">   
+          <div>
+            <div>2371</div>
+            <div class="subtext">Lorem Ipsum</div>
+          </div>
+        </span>
+          <div class="pie">
+            <div class="left-side half-circle"></div>
+            <div class="right-side half-circle"></div>
+          </div>
+          <div class="shadow"></div>
+          <div class="core core-third"></div>
+          <div class="core core-fourth"></div>
+        </div>
+
+        <div class="pie-wrapper progress-43 style-2">
+          <span class="label">   
+          <div>
+            <div>129</div>
+            <div class="subtext">Lorem Ipsum</div>
+          </div>
+        </span>
+          <div class="pie">
+            <div class="left-side half-circle"></div>
+            <div class="right-side half-circle"></div>
+          </div>
+          <div class="shadow"></div>
+          <div class="core core-top"></div>
+          <div class="core core-sixth"></div>
+        </div>
+
+        <div class="pie-wrapper progress-55 style-2">
+            <span class="label">   
+          <div>
+            <div>327</div>
+            <div class="subtext">Lorem Ipsum</div>
+          </div>
+        </span>
+          <div class="pie">
+            <div class="left-side half-circle"></div>
+            <div class="right-side half-circle"></div>
+          </div>
+          <div class="shadow"></div>
+          <div class="core core-seventh"></div>
+          <div class="core core-eighth"></div>
+        </div>     
+      </div>
+    </div>
+  </article>
+
+<article class="fourth">
+  <h1>our benefits</h1>  
+  <div class="content">
+    <div class="line">
+      <div class="text-conteiner right-text response">
+        <div class="title">Viewing/Downloading  Transcripts</div>
+        <br>
+        <div class="text">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form</div>
+      </div> 
+      <div>
+        <img src="/assets/img/image for hp(4).png" alt="">
+      </div>
+      <div class="text-conteiner right-text full-page">
+        <div class="title">Viewing/Downloading  Transcripts</div>
+        <br>
+        <div class="text">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form</div>
+      </div>   
+    </div>
+    <div class="line">
+      <div class="text-conteiner left-text">
+        <div class="title">Viewing/Downloading  Transcripts</div>
+        <br>
+        <div class="text">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form</div>
+      </div> 
+      <div>
+        <img src="/assets/img/image for hp(5).png" alt="">
+      </div>  
+    </div>
+    <div class="line">
+      <div class="text-conteiner right-text response">
+        <div class="title">Viewing/Downloading  Transcripts</div>
+        <br>
+        <div class="text">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form</div>
+      </div> 
+      <div>
+        <img src="/assets/img/image for hp(6).png" alt="">
+      </div> 
+      <div class="text-conteiner right-text full-page">
+        <div class="title">Viewing/Downloading  Transcripts</div>
+        <br>
+        <div class="text">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form</div>
+      </div>  
+    </div>
+    <div class="line">
+      <div class="text-conteiner right-text">
+        <div class="title">Viewing/Downloading  Transcripts</div>
+        <br>
+        <div class="text">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form</div>
+      </div> 
+       <div>
+        <img src="/assets/img/image for hp(7).png" alt="">
+      </div>  
+    </div>
+  </div>
+</article>
+
+<article class="fifth">
+  <div class="content">
+  <h1>Services Providers</h1>
+  <div class="main">
+  <div class="slider slider-nav-fifth">
+    <div style="width: 100%;">
+      <div class="title">
+      <img src="assets/img/image for hp(9).png" alt="">
+      <div class="title-text">
+      <div class="name">Noah Ferguson</div>
+      <div class="line"></div>
+      <div class="company-name">Transcription, Videotaping, Realtime</div>
+    </div>
+      </div>
+      <div class="text">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</div>
+    </div>
+    <div>
+      <div class="title">
+      <img src="assets/img/image for hp(8).png" alt="">
+      <div class="title-text">
+      <div class="name">Noah Ferguson</div>
+      <div class="line"></div>
+      <div class="company-name">Transcription, Videotaping, Realtime</div>
+    </div>
+      </div>
+      <div class="text">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don’t look even.</div>
+    </div>
+    <div>
+      <div class="title">
+      <img src="assets/img/image for hp(9).png" alt="">
+      <div class="title-text">
+      <div class="name">Noah Ferguson</div>
+      <div class="line"></div>
+      <div class="company-name">Transcription, Videotaping, Realtime</div>
+    </div>
+      </div>
+      <div class="text">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</div>
+    </div>
+  </div>
+</div>
+</div>
+</article>
+
+<article class="sixth">
+  <div class="content">
+  <div class="main">
+  <div class="slider slider-nav">
+    <div>
+      <h1>Testimonials</h1>
+      <div class="name">Erik Scott</div>
+      <br>
+      <div class="company-name">Company Name, Position</div>
+      <br><br>
+      <div>There are many variations of passages of Lorem Ipsum available, but the majority have  suffered alteration in some form, by injected humour, or randomised words which don’t look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn’t anything embarrassing hidden in the middle of text.</div>
+    </div>
+    <div>
+      <h1>Testimonials</h1>
+      <div>Erik Scott</div>
+      <div>Company Name, Position</div>
+      <div>There are many variations of passages of Lorem Ipsum available, but the majority have  suffered alteration in some form, by injected humour, or randomised words which don’t look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn’t anything embarrassing hidden in the middle of text.</div>
+    </div>
+    <div>
+      <h1>Testimonials</h1>
+      <div>Erik Scott</div>
+      <div>Company Name, Position</div>
+      <div>There are many variations of passages of Lorem Ipsum available, but the majority have  suffered alteration in some form, by injected humour, or randomised words which don’t look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn’t anything embarrassing hidden in the middle of text.</div>
+    </div>
+    <div>
+      <h1>Testimonials</h1>
+      <div>Erik Scott</div>
+      <div>Company Name, Position</div>
+      <div>There are many variations of passages of Lorem Ipsum available, but the majority have  suffered alteration in some form, by injected humour, or randomised words which don’t look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn’t anything embarrassing hidden in the middle of text.</div>
+    </div>
+    <div>
+      <h1>Testimonials</h1>
+      <div>Erik Scott</div>
+      <div>Company Name, Position</div>
+      <div>There are many variations of passages of Lorem Ipsum available, but the majority have  suffered alteration in some form, by injected humour, or randomised words which don’t look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn’t anything embarrassing hidden in the middle of text.</div>
+    </div>
+    <div>
+      <h1>Testimonials</h1>
+      <div>Erik Scott</div>
+      <div>Company Name, Position</div>
+      <div>There are many variations of passages of Lorem Ipsum available, but the majority have  suffered alteration in some form, by injected humour, or randomised words which don’t look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn’t anything embarrassing hidden in the middle of text.</div>
+    </div>
+    <div>
+      <h1>Testimonials</h1>
+      <div>Erik Scott</div>
+      <div>Company Name, Position</div>
+      <div>There are many variations of passages of Lorem Ipsum available, but the majority have  suffered alteration in some form, by injected humour, or randomised words which don’t look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn’t anything embarrassing hidden in the middle of text.</div>
+    </div>                
+  </div>
+</div>
+</div>
+</article>
+</section>
+
+<footer>
+  <div class="content grid">
+    <div class="middle">
+     <div>Privacy Policy</div>
+     <div>Terms and Conditions</div>
+     <div>Contact Us</div>
+    </div> 
+    <div class="with-img middle">
+      <div class="img">
+        <img src="assets/img/icn 12.png" alt="">
+      </div>
+      <div>
+      <div>New York</div>
+      <div>83 Margot Corner Apt. 667</div>
+      <div>95018-6545</div>
+    </div>
+    </div>
+    <div class="with-img middle">
+    <div class="img full-page" class="right-float">
+      <img src="assets/img/icn 11.png" alt="">
+    </div>
+      <div class="right-float">
+      <div>beatty.brown@gmail.com</div>
+      <div>261-198-7507</div>
+    </div>
+    </div>
+    <div class="copyright">&copy; 2017 NexDep. </div>
+  </div>
+</footer>
+
+</body>
+</html>
